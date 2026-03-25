@@ -1,0 +1,130 @@
+::before,
+::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;  
+}
+body {
+font-family: var(--second-family);
+color: #FFF;
+background: #F3E5C3;
+margin: 0;
+}
+
+body.modal-open {
+overflow: hidden;
+}
+
+
+ul {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+padding: 0;
+}
+
+ul,
+ol {
+margin: 0;
+padding: 0;
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto; 
+}
+
+.afischa {
+    text-align: center;
+    padding: 110px 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.180)), url(../images/heder.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 412px;
+    align-items: center;
+    margin: auto;
+}
+
+.afitex {
+  font-size: 40px;
+}
+
+.afip {
+font-weight: 400;
+font-size: 15px;
+}
+
+.feauter {
+padding: 0;
+height: 80px;  
+background: #A34327;
+}
+
+.featext {
+ font-size: 15px;   
+ color: #F3E5C3;
+ padding-left: 25px;
+ padding-top: 5px;
+}
+
+.feapic {
+font-size: 7px;
+color: #F3E5C3;
+padding-left: 25px;
+margin-top: 1px;
+}
+
+.fealos {
+font-size: 7px;
+color: #F3E5C3; 
+margin-top: 13px; 
+padding-left: 25px;
+}
+
+.spysok {
+text-align: center;
+}
+
+.nazva {
+font-weight: 400;
+font-size: 15px;
+color: #A34327;
+margin: 18px auto;
+}
+
+.pers {
+border-radius: 8px;
+width: 362px;
+height: 40px; 
+cursor: pointer;
+background-color: #A34327;
+padding: 8px 15px;
+margin-right: auto;
+margin-left: auto;
+border: none;
+}
+
+.one-list {
+margin: 14px 25px;
+}
+
+.tebut {
+font-weight: 400;
+font-size: 15px;
+text-align: left;  
+color: #F3E5C3; 
+font-family: var(--second-family)
+}
