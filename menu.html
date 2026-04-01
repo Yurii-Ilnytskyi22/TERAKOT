@@ -14,38 +14,278 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/menu.js"></script>
     <title>.</title>
 </head>
 <body>
-    <header>
-        <ul>
-            <li><button>Frühstück</button></li>
-            <li><button>Mittagstisch</button></li>
-            <li><button>Backwaren</button></li>
-            <li><button>Getränke</button></li>
-        </ul>
-    </header>
+<header class="menu-header">
 
-<section class="fruch">
+    <ul class="menu-nav me-list">
+    <li><a href="#fruch">Frühstück</a></li>
+    <li><a href="#mitag">Mittagstisch</a></li>
+    <li><a href="#back">Backwaren</a></li>
+    <li><a href="#getr">Getränke</a></li>
+    </ul>
+
+</header>
+
+<section class="menu" id="fruch">
+
     <h2>Frühstück</h2>
-    <p>.</p>
-    <div>
-        <div><h3>Omelett mit Schinken</h3>
+    <div class="card">
+        <div class="card-info">
+        <h3>Omelett mit Schinken</h3>
         <p>0, 320 Gramm</p>
-        <ul>
-            <li><div>.</div><p>13</p></li>
-            <li>0</li>
-        </ul>
-    </div>
-        <div><img src="./images/omletschynka.jpg" alt="omletschynka"></div>
+            <div class="card-bottom">
+               <span class="price">13 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/omletschynka.jpg" alt="">
+
     </div>
 
+    <div class="card">
+        <div class="card-info">
+        <h3>Omelett mit Pilzen</h3>
+        <p>0, 320 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">13 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/omletzhrybamy.jpg" alt="">
+
+    </div>    
+    
+    <div class="card">
+        <div class="card-info">
+        <h3>Käsefladen</h3>
+        <p>0, 260 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">10 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/syrnyki.jpg" alt="">
+
+    </div> 
+
+    <div class="card">
+        <div class="card-info">
+        <h3>Das Frühstück des Bäckers</h3>
+        <p>0, 190 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">9 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/sendvich.jpg" alt="">
+
+    </div>    
+    <div class="divider"></div>
 </section>
 
-<section></section>
+<section class="menu" id="mitag">
+    <h2 >Mittagstisch - 12:00</h2>
+    <div class="card">
+        <div class="card-info">
+        <h3 class="dish">Kürbiscremesuppe</h3>
+        <p>0, 400 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">14 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/yellowsup.jpg" alt="">
 
-<section></section>
+    </div>
 
-<section></section>
+    <div class="card">
+        <div class="card-info">
+        <h3>Pilzcremesuppe</h3>
+        <p>0, 400 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">14 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/brounsup.jpg" alt="">
+
+    </div>
+
+    <div class="card">
+        <div class="card-info">
+        <h3>Nudeln mit Pilzen</h3>
+        <p>0, 350 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">13 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/pilzpasta.jpg" alt="">
+
+    </div>
+ 
+    <div class="card">
+        <div class="card-info">
+        <h3>Pasta mit Hähnchen und Tomaten</h3>
+        <p>0, 400 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">13 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/tomatenpasta.jpg" alt="">
+
+    </div>
+    
+    <div class="card">
+        <div class="card-info">
+        <h3>Zrazy</h3>
+        <p>0, 340 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">11 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/zrazy.jpg" alt="">
+
+    </div>    
+
+        <div class="card">
+        <div class="card-info">
+        <h3>Pulled Pork mit Kartoffelpüree</h3>
+        <p>0, 450 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">14 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/rwanasvunyna.jpg" alt="">
+
+    </div> 
+    <div class="divider"></div>
+</section>
+
+<section class="menu" id="back">
+    <h2>Backwaren und “ To - Go”</h2>
+    <div class="card">
+        <div class="card-info">
+        <h3>Jaworiv-Kuchen</h3>
+        <p>0, 450 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">12 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/purih.jpg" alt="">
+
+    </div>
+
+    <div class="card">
+        <div class="card-info">
+        <h3>Mohnbrötchen</h3>
+        <p>0, 150 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">5 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/mak.jpg" alt="">
+
+    </div>
+    
+    <div class="card">
+        <div class="card-info">
+        <h3>Das Shu-Gebäck</h3>
+        <p>0, 150 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">6 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/desertschu.jpg" alt="">
+
+    </div>
+ 
+    <div class="card">
+        <div class="card-info">
+        <h3>Handwerklich hergestelltes Brot</h3>
+        <p>0, 800 Gramm</p>
+            <div class="card-bottom">
+               <span class="price">9 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/brot.jpg" alt="">
+
+    </div>
+    <div class="divider"></div>    
+</section>
+
+<section class="menu" id="getr">
+    <h2>Getränke</h2>
+    <div class="card">
+        <div class="card-info">
+        <h3>Espresso</h3>
+        <p>0, 35 ml</p>
+            <div class="card-bottom">
+               <span class="price">2 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/espresso.jpg" alt="">
+
+    </div>
+    <div class="card">
+        <div class="card-info">
+        <h3>Kaffee</h3>
+        <p>0, 120 ml</p>
+            <div class="card-bottom">
+               <span class="price">2,50 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/americano.jpg" alt="">
+
+    </div>
+    <div class="card">
+        <div class="card-info">
+        <h3>Kaffee mit Milch</h3>
+        <p>0, 150 ml</p>
+            <div class="card-bottom">
+               <span class="price">3 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/americanoitmilk.jpg" alt="">
+
+    </div>
+    <div class="card">
+        <div class="card-info">
+        <h3>Cappuccino</h3>
+        <p>0, 350 ml</p>
+            <div class="card-bottom">
+               <span class="price">3,50 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/cappucino.jpg" alt="">
+
+    </div>
+    <div class="card">
+        <div class="card-info">
+        <h3>Tee</h3>
+        <p>0, 150 ml</p>
+            <div class="card-bottom">
+               <span class="price">2,20 €</span>
+               <span class="fav">♡</span>
+            </div>
+        </div>
+        <img src="./images/tee.jpg" alt="">
+
+    </div>
+</section>
 </body>
 </html>

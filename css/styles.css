@@ -48,6 +48,12 @@ max-width: 100%;
 height: auto; 
 }
 
+html {
+scroll-behavior: smooth;
+}
+
+/* #region page first */
+
 .home-page {
 height: 350px;
 padding: 134px 0;
@@ -186,8 +192,10 @@ color: #f2e3d5;
 }
 
 .divider {
-margin: 30px 0;
+margin: 30px auto;
 border-top: 2px solid #6f220d;
+width: 335px;
+
 }
 
 .info {
@@ -237,16 +245,22 @@ color: #6f220d;
 margin: 4px 0 0;
 color: #6f220d;
 font-size: 14px;
+text-decoration: none;
+}
 
+.links {
+padding: 0 20px;
 }
 
 .social-title {
 font-family: var(--font3);
-margin: 30px 0 16px;
+margin: 30px auto;
 padding: 0 20px;
 color: #6f220d;
-font-size: 16px;
+font-size: 15px;
 font-weight: 500;
+text-align: left;
+text-transform: capitalize;
 }
 
 .social-buttons {
@@ -268,3 +282,172 @@ font-size: 16px;
 line-height: 1,4;
 font-family: var(--font3);
 }
+
+/* #endregion page first */
+
+/* #region menu page */
+
+section {
+  scroll-margin-top: 80px; /* висота хедера */
+}
+
+.menu-header {
+overflow-x: auto;
+scrollbar-width: none;
+scroll-behavior: smooth;
+position: sticky;
+top: 0;
+z-index: 1000;
+background: #fffff8;
+border-bottom: 1px solid #eee;
+}
+
+.menu-header::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-nav {
+display: flex;
+gap: 10px;
+list-style: none;
+padding: 0;
+margin: 0;
+padding: 13px 10px;
+
+}
+
+
+
+.menu-nav a {
+display: block;
+border: none;
+padding: 12px 0;
+border-radius: 8px;
+font-size: 12px;
+background: #7a2e1c;
+color: #fffff8;
+white-space: nowrap;
+cursor: pointer;
+text-decoration: none;
+transition: 0.3s;
+width: 122px;
+height: 35px;
+text-align: center;
+flex-shrink: 0;
+}
+
+.menu-nav a:hover {
+  background: #a44a30;
+}
+
+.menu-nav a.active {
+background: #c96a4a;
+}
+
+.menu-nav a.active:hover {
+background: #c96a4a; /* щоб не мигало */
+}
+
+.menu-header,
+.menu {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+/* ---------- SECTION ---------- */
+
+.menu {
+padding: 16px;
+}
+
+
+
+.menu h2 {
+font-size: 28px;
+margin-bottom: 20px;
+border-bottom: 2px solid #7a2e1c;
+display: inline-block;
+padding-bottom: 5px;
+width: 335px;
+}
+
+
+
+/* ---------- CARD ---------- */
+
+.card {
+display: flex;
+justify-content: space-between;
+background: #f5f2ee;
+border-radius: 6px;
+margin-bottom: 16px;
+width: 335px;
+height: 140px;
+}
+
+
+
+/* текст */
+
+.card-info {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+flex: 1;
+padding: 15px 25px 25px 10px;
+}
+
+
+
+.card-info h3 {
+font-size: 14px;
+margin-bottom: 4px;
+}
+
+
+
+.card-info p {
+font-size: 14px;
+color: #777;
+}
+
+
+
+/* низ карточки */
+
+.card-bottom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 12px;
+
+}
+
+
+
+.price {
+font-size: 18px;
+font-weight: bold;
+}
+
+
+
+.fav {
+font-size: 18px;
+color: #7a2e1c;
+cursor: pointer;
+}
+
+
+
+/* картинка */
+
+.card img {
+border-radius: 0 6px 6px 0;
+width: 159px;
+height: 140px;
+object-fit: cover;
+}
+
+
+/* #endregion menu page */
