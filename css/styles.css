@@ -48,6 +48,10 @@ max-width: 100%;
 height: auto; 
 }
 
+svg {
+  fill: currentColor;
+}
+
 html {
 scroll-behavior: smooth;
 }
@@ -176,20 +180,20 @@ justify-content: space-between;
 padding: 18px 20px;
 text-decoration: none;
 background-color: #f3ece6;
+transform: translateX(5px);
 border-radius: 12px;
 color: #6f220d;
 font-size: 18px;
+transition: all 0.3s ease;
 }
 
-.pers::after {
-content: "→";
-font-size: 20px;
+.icon-list {
+width: 25px;
+height: 25px;
+fill: #6f220d;
 }
 
-.pers:hover {
-background-color: #6f220d;
-color: #f2e3d5;
-}
+
 
 .divider {
 margin: 30px auto;
@@ -449,5 +453,51 @@ height: 140px;
 object-fit: cover;
 }
 
+.cart-bar {
+position: fixed;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+width: 90%;
+max-width: 335px;
+background: #7a2e1c;
+color: #fffff8;
+padding: 16px;
+border-radius: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 2000;
+transition: 0.3s;
+}
+
+.cart-bar.hidden {
+opacity: 0;
+pointer-events: none;
+transform: translateX(-50%) translateY(20px);
+}
+
+.fav {
+cursor: pointer;
+transition: 0.3s;
+}
+
+.fav svg {
+fill: transparent;
+stroke: #7a2e1c;
+stroke-width: 2;
+transition: 0.3s;
+}
+
+.fav.active svg {
+fill: #7a2e1c;
+stroke: #7a2e1c;
+}
+
+.cart-icon {
+fill: #fffff8;
+width: 20px;
+height: 20px;
+}
 
 /* #endregion menu page */
