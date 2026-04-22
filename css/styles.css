@@ -56,6 +56,8 @@ html {
 scroll-behavior: smooth;
 }
 
+/* #region phone */
+
 /* #region page first */
 
 .home-page {
@@ -122,13 +124,41 @@ margin: 25px auto;
 }
 
 .tablet {
-padding: 25px 0 40px;
+padding: 25px 0;
 }
 
 .spysok {
 padding: 0 ;
 margin: 0 auto;
 width: 335px;
+}
+
+.tema {
+padding: 0 20px 60px;
+}
+
+.tema-text  {
+font-family: Playfair Display, serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.2;
+text-align: left;
+font-variant: normal;
+text-transform: none;
+color: #6f220d;
+max-width: 335px;
+max-height: 207px;
+margin: 0 auto;
+}
+
+.brand-name {
+font-size: 36px;
+display: inline;
+line-height: 1;
+vertical-align: baseline;
+text-transform: uppercase;
+font-variant: normal;
+margin-right: 5px;
 }
 
 .menu-title {
@@ -537,3 +567,10 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.4;
 }
+
+/* #endregion phone */
+
+/* #region tablet */
+
+
+/* #endregion tablet */
